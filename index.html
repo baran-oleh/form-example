@@ -32,6 +32,39 @@
                     <option value="other">Other</option>
                 </select>
             </fieldset>
+            <fieldset class="recommendation">
+                <legend class="recommendation__title">Would you recommend us to a friends?</legend>
+                <label class="recommendation__label"><input type="radio" name="recommendation" value="definitely"> Definitely</label>
+                <label class="recommendation__label"><input type="radio" name="recommendation" value="maybe"> Maybe</label>
+                <label class="recommendation__label"><input type="radio" name="recommendation" value="not_sure"> Not sure</label>
+            </fieldset>
+            <label for="feature" class="general__label">What is your favorite feature of be with us?</label>
+            <select name="feature" id="feature" class="general__input margin">
+                <option value="" selected disabled>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open_source">Open Source</option>
+            </select>
+            <fieldset class="improvement">
+                <legend class="improvement__title">What would you like to see improved?<span>(Check all that apply)</span></legend>
+                <label class="improvement__label"><input type="checkbox" name="improvement" value="front_end"> Front-end Projects</label>
+                <label class="improvement__label"><input type="checkbox" name="improvement" value="back_end"> Back-end Projects</label>
+                <label class="improvement__label"><input type="checkbox" name="improvement" value="data_visualization"> Data Visualization</label>
+                <label class="improvement__label"><input type="checkbox" name="improvement" value="challenges"> Challenges</label>
+                <label class="improvement__label"><input type="checkbox" name="improvement" value="open_source"> Open Source Community</label>
+                <label class="improvement__label"><input type="checkbox" name="improvement" value="gitter_help"> Gitter help rooms</label>
+                <label class="improvement__label"><input type="checkbox" name="improvement" value="videos"> Videos</label>
+                <label class="improvement__label"><input type="checkbox" name="improvement" value="city_meetups"> City Meetups</label>
+                <label class="improvement__label"><input type="checkbox" name="improvement" value="wiki"> Wiki</label>
+                <label class="improvement__label"><input type="checkbox" name="improvement" value="forum"> Forum</label>
+                <label class="improvement__label"><input type="checkbox" name="improvement" value="additional_courses"> Additional Courses</label>
+            </fieldset>
+            <fieldset class="suggestions">
+                <legend class="suggestions__title">Any comments or suggestions?</legend>
+                <textarea name="suggestions" class="suggestions__text" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            </fieldset>
+            <button type="submit" form="form" class="button">Submit</button>
         </form>
     </main>
 </body>
