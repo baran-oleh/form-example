@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/Alecive-Flatwoken-Apps-Google-Drive-Forms.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Form Title</h1>
+        <h2 class="header__subtitle">Here can be any text for sub title</h2>
+    </header>
+    <main>
+        <form class="form" id="form">
+            <fieldset class="general">
+                <label for="name" class="general__label">Name</label>
+                <input type="text" name="name" id="name" class="general__input" required placeholder="Enter your name">
+                <label for="email" class="general__label">Email</label>
+                <input type="email" name="email" id="email" class="general__input" placeholder="Enter your Email" required>
+                <label for="age" class="general__label">Age <span>(optional)</span></label>
+                <input type="number" name="age" id="age" placeholder="Age" class="general__input" min="15" max="120" required>
+                <label for="current_role" class="general__label">Which option best describes your current role?</label>
+                <select name="current_role" id="current_role" class="general__input">
+                    <option value="" selected disabled>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="full_time_job">Full time job</option>
+                    <option value="full_time_learner">Full time learner</option>
+                    <option value="no">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
